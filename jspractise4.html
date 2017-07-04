@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+   <h2>-------practise on 16.06.2017-----------</h2> 
+    
+    <p id="demo"></p>
+    <button onclick="splitting()">split!!!!</button>
+    <button onclick="forloop()">For!!!</button>
+    <button onclick="search()">search!!</button>
+    <button onclick="getname()">name!!!</button>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+    
+    function splitting()
+        {
+            var str="ABC-DEF-GHI-JKL-MNO-PQR-STU-VWX-YZ";
+            var arr= str.split("-");
+            var text= "";
+            var i;
+            for(i=0;  i<arr.length; i++)
+                {
+                    text += arr[i] +"<br/>"
+                 
+                }
+            document.getElementById("demo").innerHTML= text;   
+        }
+        
+        function forloop()
+        {
+            var car=["Volkswagen","verna","Audi"];
+            var i,flex,text;
+            var flex=car.length;
+            text="<ul>"
+            for(i=0 ; i<flex ; i++)
+                {
+                    text += "<li>" +car[i] + "</li>"
+                document.getElementById("demo").innerHTML=text;
+                }
+           
+                    text += "</ul>";
+        }
+        
+        
+        function search()
+        { 
+        var str="how are you satabdi,whats up satabdi?how is your family satabdi?";
+        var count=(str.match(/satabdi/gi)||[]).length;
+        alert("the satabdi word is present "+ count +" times");
+        }
+        
+        function getname()
+        { var name="doe";
+            function person(fname,lname,age){
+                this.fname=fname;
+                this.lname=lname;
+                this.age=age;
+                this.changename= function (name)
+                {
+                    this.lname=name;
+                }
+            }
+             var mother=new person("marry","williams",25);
+             mother.changename(name);
+            document.getElementById("demo").innerHTML="my mothers firstname is: "+mother.fname+ " and lastname is :" + mother.lname;
+              
+            
+            
+        }
+    
+    
+    </script>
+   
+  
+   
+
+   
+    
+    
+    
+    
+</body>
+</html>

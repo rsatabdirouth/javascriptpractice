@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+     <p>Hi Mrs. Satabdi Routh</p>
+    <p id="demo"></p>
+    <p id="today"></p>
+    <button onclick="currentdate()">date!!!!</button>
+    <button onclick="date()">Show date!!!!!</button>
+   
+    
+    <script type="text/javascript">
+       
+       function currentdate()
+        {  
+            var time=new Date().getHours ();
+            if(time<12)
+                {
+                    document.getElementById("demo").innerHTML =" goodmorning"
+                }
+            else if(time<17)
+            {
+                document.getElementById("demo").innerHTML="goodevening";
+            }
+            else 
+                {
+                        document.getElementById("demo").innerHTML="goodnight";
+                }
+          
+        }
+        
+        function date()
+        {
+             document.getElementById("today").innerHTML= Date();
+        }
+       
+       
+       
+    </script> 
+    
+    
+    
+    
+</body>
+</html>

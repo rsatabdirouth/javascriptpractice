@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html><body>
+    
+ <h2>practice on 14-06-2017</h2>   
+ <p id="hide1">java script can hide the content</p>
+ <p id="font">javascript canchange the fontsize.</p>
+ <p id="fruit">for loop in the array.</p>
+ <p id="demo">My Full Name is ::</p>
+ <p id="person">the example of object is::</p>
+ <p id="col">on button click the colour will be changed</p>
+<span onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'";>the color will change on mouse over</span>
+    <br/>
+ <p id="opt">the sum of X and Y is::</p>
+ <p id="index">array index example:</p>
+    <h2>operator practice</h2>
+    <p id="math1"> random::</p>
+    <p id="math2">square root:</p>
+    <p id="math3"></p>
+    <p id="math4"></p>
+    <p id="math5"></p>
+    
+ 
+    
+    
+    <button type="button" onclick="hide()";>hide!!!</button>
+    <button onclick="font()";>font!!!</button>
+    <button onclick="document.write(10*10)">write!!!!</button>
+    <button onclick="fruits()">array!!!</button>
+    <button onclick="getname()">name!!!!</button>
+    <button onclick="callobject()">object!!!!</button>
+    <button onclick="colchange()">colchange!!!!</button>
+    <button onclick="operator()">operator!!!!</button>
+    <button onclick="flowers()">index!!!!!</button>
+   
+    
+    
+  
+    
+    
+    
+    
+    
+    <script type="text/javascript">
+       
+        
+        
+        function hide()
+        {
+            document.getElementById("hide1").style.display="none";
+        }
+        
+        function font()
+        {
+            document.getElementById("font").style.fontSize="35px";
+        }
+        function fruits()
+        {
+           var fruit=["banana","orange","Apple","grapes"];
+            var i,text,flex;
+            flex=fruit.length;
+            text="<ul>";
+            for(i=0; i<flex; i++)
+                {
+                    text +="<li>" + fruit[i] +    "</li>"
+                }
+            text +="</ul>";
+            document.getElementById("fruit").innerHTML=text;
+           
+            
+        }
+        
+        function getname()
+        {
+            var firstname="satabdi";
+            var lastname="Biswas";
+            var fullname=firstname + "  " + lastname;
+            document.getElementById("demo").innerHTML=fullname;
+        }
+    function callobject()
+        {
+          var person={name:"john",lname:"Doe",age:25};
+          document.getElementById("person").innerHTML=person.age;
+        }
+    function colchange()
+        {
+            document.getElementById("col").style.color="pink";
+        }
+    function operator()
+        {
+            var x=10;
+            var y=70;
+            x += y;
+            y /= x;
+            document.getElementById("opt").innerHTML=y;
+        }
+        
+        function flowers()
+        { flower=["Rose","Lily","Lotus"];
+        document.getElementById("index").innerHTML=flower[1];
+            
+        }
+        /*------------ operator practice-------------*/
+        
+        
+        document.getElementById("math1").innerHTML= Math.random();
+        document.getElementById("math2").innerHTML= Math.sqrt(16);
+        document.getElementById("math3").innerHTML=Math.round(8.9);
+        document.getElementById("math4").innerHTML=Math.ceil(10.9);
+        document.getElementById("math5").innerHTML=Math.floor(8.9);
+        
+    
+    
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+</body></html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style>
+.loader {
+  border: 10px solid #030c1c;
+  border-radius: 50%;
+  border-top: 10px solid #3498db;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body contenteditable="false">
+
+<h2>How To Create A Loader</h2>
+<p><strong>Note:</strong> The -webkit- and -ms- prefixes are for browsers that do not support animation and transform properties.</p>
+
+<div class="loader"></div>
+
+
+
+</body></html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://www.w3schools.com/Js/tryit.asp?filename=tryjs_object_prototype6 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body contenteditable="false">
+
+<p id="demo">My father is John Doe</p>
+
+<script>
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+Person.prototype.name = function() {
+    return this.firstName + " " + this.lastName
+};
+
+var myFather = new Person("John", "Doe", 50, "blue");
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.name(); 
+</script>
+
+
+
+</body></html>

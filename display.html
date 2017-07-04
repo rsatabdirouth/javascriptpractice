@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+    <h2>What javascript can do?</h2>
+    <p id="demo"></p>
+    <p id="demo3"></p>
+    <p id="demo5"></p>
+    <p id="display">java script can hide and unhide</p>
+    <p id="name"></p>
+    <p id="print1"></p>
+    <p id="print2"></p>
+    <p id="assignment"></p>
+    <p id="assignment1"></p>
+    <p id="array"></p>
+    <p id="ar1"></p>
+    <p id="for">the for loop use</p>
+    
+<span onmouseover="this.style.color='red'">on move over the color of the content will change</span>
+    <br/>
+    
+     <button type="button" onclick='document.getElementById("display").style.display="none"'>hide!!!!!</button>
+    
+    <button type="button" onclick='document.getElementById("display").style.fontSize="25px"'>font!!!!!</button>
+    
+    <button type="button" onclick="document.getElementById('display').innerHTML='Hi! Satabdi'">change!!!</button>
+    
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+    
+    <button type="button" onclick="document.getElementById('demo').innerHTML =z;">add!!</button>
+    
+<input type="button" value="name" onclick="getFullNmae()">
+    <button type="button" onclick="disp()">print!!!!</button>
+    
+    <button type="button" onclick="plusopt()">operator!!!</button>
+    <button type="button" onclick='document.getElementById("array").innerHTML=brand[1];'>array</button>
+     <button type="button" onclick='document.getElementById("ar1").innerHTML=person.fname;'>person!!!!!</button>
+    
+    <button type="button" onclick="forloopuse()">forloop!!!!</button>
+  
+    <script>
+        
+     var x=1;
+    var y=10;
+    var z=x+y;
+        
+    </script>
+   
+    
+    <script type="text/javascript">
+    
+    function getFullNmae()
+    {
+    alert("full name is");
+    var firstname="satabdi";
+    var lastname="Routh";
+   
+    var fullname=firstname+" "+lastname;
+    document.getElementById("name").innerHTML=fullname;
+    
+        
+    }
+</script>
+    <script>
+        function disp(){
+             var t=5+3+"5"
+    var k="5"+3+5
+    document.getElementById("print1").innerHTML=t;
+    document.getElementById("print2").innerHTML=k;
+            
+        }
+   
+    </script>
+    
+    <script>
+    function plusopt()
+        {
+    alert("operator is")
+    var x = 10;
+     x += 5;
+            var y=50;
+            y *=10;
+    
+        
+        document.getElementById("assignment").innerHTML=x;
+            document.getElementById("assignment1").innerHTML=y;
+            
+        }
+      
+    </script>
+    <script>
+    var brand=["W-collection","BIBA Collection","Global Desi"];
+        document.getElementById("demo3").innerHTML=brand.length;
+    
+        
+        var person = 
+        {   fname:"satabdi",
+            lname:"Biswas",
+            age:28
+        };
+    
+    
+    </script>
+    
+    <script type="text/javascript">
+     function forloopuse()
+        {
+            var text,flex;
+            var car=["Polo","audi","RangeRover","Maruti","i10"];
+            flex=car.length;
+            text="<ul>";
+            for(var i=0; i<flex; i++)
+                {
+                 text +=  "<li>"  + car[i] + "</li>"
+                }
+            text +="</ul>"
+            document.getElementById("for").innerHTML=text;
+            
+        }
+    </script>
+    
+  
+    
+
+    
+    </body></html>
